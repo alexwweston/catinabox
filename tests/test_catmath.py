@@ -1,6 +1,5 @@
 from catinabox import catmath
 
-
 def test__cat_years_to_hooman_years__middle_age__succeeds():
     cat_age = 7
     hooman_age = catmath.cat_years_to_hooman_years(cat_age)
