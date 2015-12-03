@@ -4,10 +4,11 @@ from catinabox import cattery, mccattery
 
 
 @pytest.fixture(params=[
-    cattery.Cattery,
-    mccattery.McCattery
+    cattery.Cattery,# Cattery class
+    mccattery.McCattery # McCattery class
 ])
 def cattery_fixture(request):
+    #returns a new Cattery or McCattery instance
     return request.param()
 
 
